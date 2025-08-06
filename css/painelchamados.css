@@ -1,0 +1,292 @@
+/* Plugin Painel de Chamados - CSS
+ * Versão 1.0.0
+ * Autor: Alan Rodrigues - AF Solutions
+ */
+
+.painel-chamados-container {
+    padding: 20px;
+    contain: style layout;
+    isolation: isolate;
+}
+
+/* Cores por prioridade baseadas no GLPI */
+.ticket-priority-1 {
+    background-color: #d4edda !important;
+    border-left: 4px solid #28a745;
+}
+
+.ticket-priority-2 {
+    background-color: #d1ecf1 !important;
+    border-left: 4px solid #17a2b8;
+}
+
+.ticket-priority-3 {
+    background-color: #fff3cd !important;
+    border-left: 4px solid #ffc107;
+}
+
+.ticket-priority-4 {
+    background-color: #f8d7da !important;
+    border-left: 4px solid #dc3545;
+}
+
+.ticket-priority-5 {
+    background-color: #f1c0c7 !important;
+    border-left: 4px solid #721c24;
+}
+
+.ticket-priority-6 {
+    background-color: #e2e3e5 !important;
+    border-left: 4px solid #343a40;
+}
+
+/* Cores para status SLA */
+.sla-green {
+    color: #28a745 !important;
+    font-weight: bold;
+}
+
+.sla-yellow {
+    color: #ffc107 !important;
+    font-weight: bold;
+}
+
+.sla-red {
+    color: #dc3545 !important;
+    font-weight: bold;
+}
+
+/* Modo tela cheia */
+.fullscreen {
+    position: fixed !important;
+    top: 0 !important;
+    left: 0 !important;
+    width: 100vw !important;
+    height: 100vh !important;
+    z-index: 9999 !important;
+    background: white !important;
+    overflow-y: auto !important;
+}
+
+.fullscreen .painel-chamados-container {
+    height: 100vh;
+    padding: 10px;
+    max-width: 100%;
+}
+
+/* Tabela responsiva */
+.table-responsive {
+    max-height: 70vh;
+    overflow-y: auto;
+}
+
+.table-responsive::-webkit-scrollbar {
+    width: 8px;
+}
+
+.table-responsive::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+.table-responsive::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 4px;
+}
+
+.table-responsive::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+/* Badges de status */
+.badge-status-1 {
+    background-color: #28a745 !important;
+    color: white !important;
+}
+
+.badge-status-2 {
+    background-color: #ffc107 !important;
+    color: #000 !important;
+}
+
+.badge-status-3 {
+    background-color: #17a2b8 !important;
+    color: white !important;
+}
+
+/* Notificação sonora */
+.sound-notification {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 10000;
+    animation: slideInRight 0.5s ease-in-out;
+}
+
+@keyframes slideInRight {
+    from {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+/* Hover effects */
+.table tbody tr:hover {
+    background-color: rgba(0, 123, 255, 0.1) !important;
+    cursor: pointer;
+}
+
+/* Loading spinner */
+.loading-spinner {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border: 3px solid rgba(0, 0, 0, 0.1);
+    border-radius: 50%;
+    border-top-color: #007bff;
+    animation: spin 1s ease-in-out infinite;
+}
+
+@keyframes spin {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+/* Badges personalizadas */
+.badge {
+    font-size: 0.75em;
+    padding: 0.5em 0.75em;
+}
+
+/* Cards responsivos */
+.card {
+    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+    border: 1px solid rgba(0, 0, 0, 0.125);
+}
+
+.card-header {
+    background-color: #f8f9fa;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.125);
+}
+
+/* Botões */
+.btn-sm {
+    padding: 0.25rem 0.5rem;
+    font-size: 0.875rem;
+}
+
+/* Paginação específica do plugin */
+.painel-chamados-container .pagination {
+    margin-bottom: 0;
+    display: flex;
+    padding-left: 0;
+    list-style: none;
+    border-radius: 0.375rem;
+}
+
+.painel-chamados-container .page-item {
+    display: block;
+}
+
+.painel-chamados-container .page-link {
+    position: relative;
+    display: block;
+    padding: 0.5rem 0.75rem;
+    margin-left: -1px;
+    line-height: 1.25;
+    color: #007bff;
+    text-decoration: none;
+    background-color: #fff;
+    border: 1px solid #dee2e6;
+    transition: all 0.2s ease-in-out;
+}
+
+.painel-chamados-container .page-link:hover {
+    z-index: 2;
+    color: #0056b3;
+    text-decoration: none;
+    background-color: #e9ecef;
+    border-color: #dee2e6;
+}
+
+.painel-chamados-container .page-link:focus {
+    z-index: 3;
+    outline: 0;
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+
+.painel-chamados-container .page-item:first-child .page-link {
+    margin-left: 0;
+    border-top-left-radius: 0.375rem;
+    border-bottom-left-radius: 0.375rem;
+}
+
+.painel-chamados-container .page-item:last-child .page-link {
+    border-top-right-radius: 0.375rem;
+    border-bottom-right-radius: 0.375rem;
+}
+
+.painel-chamados-container .page-item.active .page-link {
+    z-index: 3;
+    color: #fff;
+    background-color: #007bff;
+    border-color: #007bff;
+}
+
+.painel-chamados-container .page-item.disabled .page-link {
+    color: #6c757d;
+    pointer-events: none;
+    cursor: auto;
+    background-color: #fff;
+    border-color: #dee2e6;
+}
+
+/* Classes específicas com namespace para evitar conflitos */
+.painel-pagination {
+    isolation: isolate;
+}
+
+.painel-page-item {
+    position: relative;
+}
+
+.painel-page-link {
+    font-weight: 500 !important;
+}
+
+.painel-page-item.painel-active .painel-page-link {
+    font-weight: 600 !important;
+    box-shadow: 0 2px 4px rgba(0, 123, 255, 0.2) !important;
+}
+
+/* Responsividade para dispositivos móveis */
+@media (max-width: 768px) {
+    .painel-chamados-container {
+        padding: 10px;
+    }
+    
+    .table-responsive {
+        font-size: 0.875rem;
+    }
+    
+    .btn-sm {
+        padding: 0.125rem 0.25rem;
+        font-size: 0.75rem;
+    }
+    
+    .card-header h3 {
+        font-size: 1.25rem;
+    }
+}
+
+/* Cores específicas para prioridades */
+.priority-muito-baixa { background-color: #d4edda; }
+.priority-baixa { background-color: #d1ecf1; }
+.priority-media { background-color: #fff3cd; }
+.priority-alta { background-color: #f8d7da; }
+.priority-muito-alta { background-color: #f1c0c7; }
+.priority-critica { background-color: #e2e3e5; }

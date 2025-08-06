@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin>
+    <name>Painel de Chamados</name>
+    <key>painelchamados</key>
+    <state>stable</state>
+    <logo></logo>
+    <description>
+        <short>
+            <en>Tickets Dashboard - Real-time ticket monitoring panel</en>
+            <pt_BR>Painel de Chamados - Painel de monitoramento de chamados em tempo real</pt_BR>
+        </short>
+        <long>
+            <en>Advanced dashboard for real-time monitoring of open tickets with status 1, 2, and 3. Features include priority-based coloring, SLA time calculation, audio notifications for new tickets, fullscreen mode, and responsive design using GLPI's Bootstrap framework.</en>
+            <pt_BR>Painel avançado para monitoramento em tempo real de chamados abertos com status 1, 2 e 3. Inclui cores baseadas em prioridade, cálculo de tempo SLA, notificações sonoras para novos chamados, modo tela cheia e design responsivo usando o framework Bootstrap do GLPI.</pt_BR>
+        </long>
+    </description>
+    <homepage>https://afsolutions.com.br</homepage>
+    <download>https://github.com/alanrodrigues/glpi-painelchamados</download>
+    <issues>https://github.com/alanrodrigues/glpi-painelchamados/issues</issues>
+    <readme>https://github.com/alanrodrigues/glpi-painelchamados/blob/main/README.md</readme>
+    <authors>
+        <author>Alan Rodrigues - AF Solutions</author>
+    </authors>
+    <versions>
+        <version>
+            <num>1.0.0</num>
+            <compatibility>~10.0</compatibility>
+            <download_url>https://github.com/alanrodrigues/glpi-painelchamados/releases/download/v1.0.0/painelchamados-1.0.0.tar.gz</download_url>
+        </version>
+    </versions>
+    <langs>
+        <lang>pt_BR</lang>
+        <lang>en_US</lang>
+    </langs>
+    <license>GPL v3+</license>
+    <tags>
+        <en>
+            <tag>dashboard</tag>
+            <tag>tickets</tag>
+            <tag>monitoring</tag>
+            <tag>realtime</tag>
+            <tag>notifications</tag>
+        </en>
+        <pt_BR>
+            <tag>painel</tag>
+            <tag>chamados</tag>
+            <tag>monitoramento</tag>
+            <tag>tempo-real</tag>
+            <tag>notificacoes</tag>
+        </pt_BR>
+    </tags>
+    <screenshots>
+        <screenshot>https://raw.githubusercontent.com/alanrodrigues/glpi-painelchamados/main/screenshots/dashboard.png</screenshot>
+        <screenshot>https://raw.githubusercontent.com/alanrodrigues/glpi-painelchamados/main/screenshots/fullscreen.png</screenshot>
+    </screenshots>
+</plugin>
